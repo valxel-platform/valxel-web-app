@@ -47,7 +47,18 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      - run: npm run check:auth
+      - name: Auth contract
+        run: |
+          npm run dev > /tmp/dev.log 2>&1 &
+          for i in $(seq 1 40); do
+            if curl -sf http://127.0.0.1:8080/__app-env >/dev/null; then
+              npm run check:auth
+              exit $?
+            fi
+            sleep 1
+          done
+          cat /tmp/dev.log
+          exit 1
 
   dependency-review:
     name: dependency-review
