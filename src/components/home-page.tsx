@@ -8,7 +8,7 @@ const verticals = ["All", ...Array.from(new Set(products.map((p) => p.vertical))
 export function HomePage() {
   const [open, setOpen] = useState(false);
   const [filter, setFilter] = useState("All");
-  const [active, setActive] = useState<(typeof products)[number]["id"]>("emr");
+  const [active, setActive] = useState<(typeof products)[number]["id"]>("sdlc");
   const [sent, setSent] = useState(false);
 
   const shown = useMemo(
@@ -288,7 +288,7 @@ export function HomePage() {
                     name="product"
                     required
                     className="h-12 rounded-xl border border-line bg-paper px-3 text-ink"
-                    defaultValue="EMR"
+                    defaultValue="Agentic SDLC"
                   >
                     {products.map((p) => (
                       <option key={p.id}>{p.name}</option>

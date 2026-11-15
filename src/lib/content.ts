@@ -1,5 +1,14 @@
 export const products = [
   {
+    id: "sdlc",
+    name: "Agentic SDLC",
+    vertical: "Engineering",
+    line: "The framework behind the products: 85% autonomous, 15–20% intent.",
+    detail:
+      "The engineering model itself, offered as a product. Architectural intent stays human. Construction, tests, and upkeep run on an agentic runtime.",
+    href: "https://valxel-platform.github.io/agentic-sdlc/",
+  },
+  {
     id: "emr",
     name: "EMR",
     vertical: "Healthcare",
@@ -38,15 +47,6 @@ export const products = [
     line: "An AI payment exchange for routing, reconciliation, and exceptions.",
     detail:
       "APX routes transactions, watches exceptions, and keeps ledgers aligned. Humans set policy. The exchange handles the volume.",
-  },
-  {
-    id: "sdlc",
-    name: "Agentic SDLC",
-    vertical: "Engineering",
-    line: "The framework behind the products: 85% autonomous, 15–20% intent.",
-    detail:
-      "The engineering model itself, offered as a product. Architectural intent stays human. Construction, tests, and upkeep run on an agentic runtime.",
-    href: "https://valxel-platform.github.io/agentic-sdlc/",
   },
 ] as const;
 
