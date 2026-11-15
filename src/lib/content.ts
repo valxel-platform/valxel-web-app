@@ -46,22 +46,7 @@ export const products = [
     line: "The framework behind the products: 85% autonomous, 15–20% intent.",
     detail:
       "The engineering model itself, offered as a product. Architectural intent stays human. Construction, tests, and upkeep run on an agentic runtime.",
-  },
-  {
-    id: "shared",
-    name: "Shared Services",
-    vertical: "Operations",
-    line: "The common layer every vertical product already knows how to use.",
-    detail:
-      "Identity, billing, notifications, and operational controls built once and shared. Each product stays focused on its vertical instead of rebuilding the same machinery.",
-  },
-  {
-    id: "platform",
-    name: "Platform",
-    vertical: "Platform",
-    line: "The runtime every Valxel product is born on.",
-    detail:
-      "One agentic platform under EMR, Ag Tech, POS, APX, and Med Spa. New verticals start from the same foundation instead of a fresh codebase.",
+    href: "https://valxel-platform.github.io/agentic-sdlc/",
   },
 ] as const;
 

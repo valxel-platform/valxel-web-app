@@ -236,6 +236,14 @@ export function HomePage() {
               <p className="mt-5 text-xs uppercase tracking-widest text-cyan">{focus.vertical}</p>
               <h3 className="mt-2 font-display text-3xl font-bold">VALXEL {focus.name}</h3>
               <p className="mt-4 text-muted">{focus.detail}</p>
+              {"href" in focus ? (
+                <a
+                  href={focus.href}
+                  className="mt-6 inline-flex h-11 items-center rounded-full bg-cyan px-4 font-medium text-navy"
+                >
+                  Open Agentic SDLC
+                </a>
+              ) : null}
             </aside>
           </div>
         </section>
